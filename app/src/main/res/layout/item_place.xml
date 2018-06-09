@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/txv_descripcion_parque"
+                android:id="@+id/txv_descripcion_miplace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="descripcion"

@@ -52,7 +52,25 @@ public class RegisterActivity extends AppCompatActivity implements RegisterActiv
                 textInputEditTextPassconf.getText().toString()
         );
         registroActivityPresenter.createCuenta(cuenta);
-        }
+
+        sharedPreferences = getSharedPreferences("PreferencesTurismoPlace", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putString("email", textInputEditTextEmail.getText().toString());
+        editor.putString("name", textInputEditTextName.getText().toString());
+        editor.putString("user", textInputEditTextUser.getText().toString());
+        editor.putString("password", textInputEditTextPass.getText().toString());
+        editor.putBoolean("persistence",true);
+
+        editor.commit();
+
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+
+
+
+    }
 
     @Override
     public void showResult(List<Cuenta> cuentaList) {

@@ -37,6 +37,7 @@ public class PlaceAdapter extends RecyclerView.Adapter {
         Place object = placeList.get(position);
         ViewHolderPlace viewHolderPlace = (ViewHolderPlace) holder;
         viewHolderPlace.textViewPlaceTitle.setText(object.getTitle());
+        viewHolderPlace.textViewParqueDesc.setText(object.getDesc());
         Picasso.get().load(object.getImg()).into(viewHolderPlace.imageViewPlaceimg);
 
     }
@@ -48,13 +49,14 @@ public class PlaceAdapter extends RecyclerView.Adapter {
 
     public class ViewHolderPlace extends RecyclerView.ViewHolder{
 
-        TextView textViewPlaceTitle;
+        TextView textViewPlaceTitle, textViewParqueDesc;
         ImageView imageViewPlaceimg;
 
         public ViewHolderPlace(View item) {
             super(item);
             textViewPlaceTitle = item.findViewById(R.id.txv_placename);
             imageViewPlaceimg = item.findViewById(R.id.iv_placeimage);
+            textViewParqueDesc = item.findViewById(R.id.txv_descripcion_miplace);
         }
     }
 }
