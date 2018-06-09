@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txv_titulo_narino"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="titutlo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal"
+                android:layout_weight=".5">
+
+                <ImageView
+                    android:id="@+id/iv_bandera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/wallpaper"/>
+
+                <ImageView
+                    android:id="@+id/iv_escudo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txv_lema"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="lema"/>
+
+                <TextView
+                    android:id="@+id/txv_descrip_narino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="descripcion"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

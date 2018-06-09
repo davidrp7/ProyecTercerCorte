@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/id_menubn_places"
+        android:title="@string/str_places"
+        android:icon="@drawable/lugar2"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/id_menubn_parks"
+        android:title="@string/str_parks"
+        android:icon="@drawable/parque"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/id_menubn_favorites"
+        android:title="@string/str_favorites"
+        android:icon="@drawable/favorito2"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/id_menubn_profile"
+        android:title="@string/str_profile"
+        android:icon="@drawable/user"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/id_menubn_homenar"
+        android:title="@string/str_profile"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"/>
+
+</menu>

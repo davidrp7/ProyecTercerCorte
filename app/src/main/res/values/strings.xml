@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mi Turismo Nariño</string>
+
+    <string name="str_create">Crear cuenta de usuario</string>
+
+    <string name="str_places">Lugares</string>
+    <string name="str_favorites">Favoritos</string>
+    <string name="str_parks">Parques</string>
+    <string name="str_profile">Perfil</string>
+    <string name="str_home">Inicio</string>
+
+    <string name="str_sesion">Cerrar sesión</string>
+
+</resources>

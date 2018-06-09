@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/fondo_boton"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+            <TextView
+                android:id="@+id/txv_descripcion_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del lugar"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:typeface="serif"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_descripcion_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/txv_ubicacion_place"
+            android:layout_width="match_parent"
+            android:text="Ubicacion"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txv_descripcion_place"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Descripcion Lugar"/>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

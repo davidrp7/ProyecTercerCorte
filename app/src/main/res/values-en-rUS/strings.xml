@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Tourismo Narino</string>
+
+    <string name="str_create">Create User Account</string>
+
+    <string name="str_places">Places</string>
+    <string name="str_favorites">Favorites</string>
+    <string name="str_parks">Parks</string>
+    <string name="str_profile">Profile</string>
+    <string name="str_home">Start</string>
+
+    <string name="str_sesion">Sign off</string>
+
+</resources>

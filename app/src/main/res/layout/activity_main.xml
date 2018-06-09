@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".Ingreso.view.MainActivity">
+
+    <include layout="@layout/toolbar_turismo"/>
+
+    <ScrollView
+        android:layout_width="340dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/fondo_blanco">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:typeface="serif"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center_horizontal"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txv_username_login"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/fondo_blanco"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/user2"
+                android:gravity="center_horizontal"
+                android:hint="Username"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txv_password_login"
+                android:layout_width="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fondo_blanco"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/llave"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:hint="Password"/>
+
+            <Button
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="INGRESAR"
+                android:typeface="serif"
+                android:onClick="clickIngresar"
+                android:textSize="25sp"
+                android:textColor="@color/textcolor"
+                android:background="@drawable/fondo_boton"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:onClick="clickpasarRegistro"
+                android:text="¿Eres nuevo? Registrate acá"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
